@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>do {
+  let jsonData = try Data(contentsOf: URL(fileURLWithPath: &lt;#Your path property#&gt;), options: .mappedIfSafe)
+    let jsonDecoder = JSONDecoder()
+  let &lt;#My Property#&gt; = try jsonDecoder.decode(&lt;#Codable Model#&gt;.self, from: jsonData)
+  } catch {
+    // handle error in case the data or the decoder fails.
+    return
+  }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F5D3243F-4471-4C56-AE45-12B7AA55DCDE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Decode the JSON data on a Codable model</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JSON Decoder for Path</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
