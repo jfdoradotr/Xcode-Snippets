@@ -32,6 +32,7 @@ make uninstall_snippets
 ## Snippets List
 * **File From Bundle**: Let you get the path of a file located in your bundle.
 * **JSON Decoder for Path**: Lets you decode a file from an specific path and convert it to your `Codable` model.
+* **Programmatic Root Scene**: Add this snippet to your `SceneDelegate` when you don't want to use `Storyboards`. (iOS 13+)
 
 ---
 ## Contribution
