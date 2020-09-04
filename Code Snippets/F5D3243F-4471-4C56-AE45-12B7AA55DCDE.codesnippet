@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string></string>
+	<string>decodePath</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -13,9 +13,9 @@
   let jsonData = try Data(contentsOf: URL(fileURLWithPath: &lt;#Your path property#&gt;), options: .mappedIfSafe)
     let jsonDecoder = JSONDecoder()
   let &lt;#My Property#&gt; = try jsonDecoder.decode(&lt;#Codable Model#&gt;.self, from: jsonData)
-  } catch {
-    // handle error in case the data or the decoder fails.
-    return
+  } catch let error {
+    // TODO: handle error in case the data or the decoder fails.
+    debugPrint(error.localizedDescription)
   }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F5D3243F-4471-4C56-AE45-12B7AA55DCDE</string>
@@ -28,6 +28,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
